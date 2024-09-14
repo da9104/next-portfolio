@@ -4,7 +4,7 @@ import gsap from 'gsap';
 export default function index({children}) {
     const magnetic = useRef(null);
 
-    useEffect( () => {
+    useEffect(() => {
         console.log(children)
         const xTo = gsap.quickTo(magnetic.current, "x", {duration: 1, ease: "elastic.out(1, 0.3)"})
         const yTo = gsap.quickTo(magnetic.current, "y", {duration: 1, ease: "elastic.out(1, 0.3)"})
