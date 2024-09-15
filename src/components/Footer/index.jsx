@@ -14,7 +14,7 @@ export default function index() {
     const x = useTransform(scrollYProgress, [0, 1], [0, 100])
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
-    const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
+    const height = useTransform(scrollYProgress, [0, 1], [50, 0])
     
     return (
         <>

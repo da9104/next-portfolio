@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import styles from './page.module.scss'
 import { AnimatePresence } from 'framer-motion' // Framer Motion for animations
+import Lenis from 'lenis'
 import Preloader from '../components/Preloader'
 import Landing from '../components/Landing'
 import Works from '../components/Works'
@@ -30,6 +31,21 @@ export default function Home() {
     )()
   }, [])
 
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy(); // Clean up the instance on unmount
+    };
+  }, [])
+  
   return (
     <main className={styles.main}>
       <AnimatePresence mode='wait'>
