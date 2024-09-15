@@ -49,7 +49,7 @@ export default function index() {
                             <p>damikang@kakao.com</p>
                         </Rounded>
                         <Rounded>
-                            <p>+31 6 27 84 74 30</p>
+                            <p>+82 10-2196-9104</p>
                         </Rounded>
                 </div>
                 <div className={styles.info}>
@@ -66,15 +66,12 @@ export default function index() {
                     <div>
                         <span>
                             <h3>socials</h3>
-                            <Magnetic>
-                                <p>Blog</p>
-                            </Magnetic>
                         </span>
                         <Magnetic>
-                            <p>Instagram</p>
+                            <p>Blog</p>
                         </Magnetic>
                         <Magnetic>
-                            <p>Dribbble</p>
+                            <p>Behance</p>
                         </Magnetic>
                         <Magnetic>
                             <p>Linkedin</p>
