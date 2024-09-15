@@ -4,6 +4,7 @@ import styles from './page.module.scss'
 import { AnimatePresence } from 'framer-motion' // Framer Motion for animations
 import Preloader from '../components/Preloader'
 import Landing from '../components/Landing'
+import Works from '../components/Works'
 // import Projects from '../components/Projects'
 // import Description from '../components/Description'
 // import SlidingImages from '../components/SlidingImages'
@@ -35,9 +36,10 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
-      {/*
-      <Description />
+      <Works />
+      {/*       
       <Projects />
+      <Description />
       <SlidingImages />
       <Contact /> */}
     </main>
