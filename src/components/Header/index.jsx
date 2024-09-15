@@ -70,7 +70,7 @@ export default function index() {
             </Rounded>
         </div>
         <AnimatePresence mode="wait">
-            {isActive && <Nav />}
+            {isActive && <Nav className='border-0' />}
         </AnimatePresence>
         </>
     )

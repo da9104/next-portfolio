@@ -85,8 +85,8 @@ export default function Home() {
             <motion.div ref={modalContainer} className={styles.gallery}>
             <p>Featured Work</p>
                 {
-                projects.map( project => {
-                    return <Project project={project} manageModal={manageModal}/>
+                projects.map((project, index) => {
+                    return <Project key={index} project={project} manageModal={manageModal}/>
                 })
                 }
             </motion.div>

@@ -133,7 +133,6 @@
     }
     
     .burgerActive{
-    
         &::after{
             transform: rotate(45deg);
             top: -1px;
