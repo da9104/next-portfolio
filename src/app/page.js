@@ -8,7 +8,7 @@ import Works from '../components/Works'
 import AboutMe from '../components/AboutMe'
 // import Projects from '../components/Projects'
 // import SlidingImages from '../components/SlidingImages'
-// import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 
 export default function Home() {
@@ -38,10 +38,11 @@ export default function Home() {
       <Landing />
       <AboutMe />
       <Works />
+      <Footer /> 
       {/*       
       <Projects />
       <SlidingImages />
-      <Contact /> */}
+      */}
     </main>
   );
 }
