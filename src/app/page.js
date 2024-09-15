@@ -5,8 +5,8 @@ import { AnimatePresence } from 'framer-motion' // Framer Motion for animations
 import Preloader from '../components/Preloader'
 import Landing from '../components/Landing'
 import Works from '../components/Works'
+import AboutMe from '../components/AboutMe'
 // import Projects from '../components/Projects'
-// import Description from '../components/Description'
 // import SlidingImages from '../components/SlidingImages'
 // import Contact from '../components/Contact'
 
@@ -36,10 +36,10 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
+      <AboutMe />
       <Works />
       {/*       
       <Projects />
-      <Description />
       <SlidingImages />
       <Contact /> */}
     </main>
