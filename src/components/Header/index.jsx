@@ -34,6 +34,7 @@ export default function index() {
 
     return (
         <>
+        {/*  Top brand && nav  */}
         <div ref={header} className={styles.header}>
             <div className={styles.logo}>
                 <p className={styles.copyright}>©</p>

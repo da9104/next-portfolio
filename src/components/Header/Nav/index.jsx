@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../animation';
-// import Link from './Link';
-// import Curve from './Curve';
-// import Footer from './Footer';
+import Link from './Link';
+import Footer from './Footer';
+import Curve from './Curve';
 
 const navItems = [
   {
@@ -14,15 +14,15 @@ const navItems = [
   },
   {
     title: "Work",
-    href: "/work",
+    href: "/",
   },
   {
     title: "About",
-    href: "/about",
+    href: "/",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/",
   },
 ]
 
@@ -46,13 +46,13 @@ export default function index() {
                     {
                       navItems.map( (data, index) => {
                         return <Link 
-                        key={index} 
-                        data={{...data, index}} 
-                        isActive={selectedIndicator == data.href} 
-                        setSelectedIndicator={setSelectedIndicator}>
-                        </Link>
-                      })
-                    }
+                            key={index} 
+                            data={{...data, index}} 
+                            isActive={selectedIndicator == data.href} 
+                            setSelectedIndicator={setSelectedIndicator}>
+                             </Link>
+                           })
+                      }
             </div>
             <Footer />
         </div>
