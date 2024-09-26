@@ -4,5 +4,11 @@
     justify-content: space-between;
     margin-top: 50px;
     font-size: 12px;
-    gap: 80px;
+    gap: 40px;
+}
+.footer a { color: rgb(153, 153, 153) }
+
+.footer a:hover{
+    cursor: pointer;
+    opacity: 0;
 }
